@@ -16,10 +16,16 @@ class ViewController: UIViewController {
         self.title = "A view controller"
     }
 
+    
+    /// iOS13 半出: .pageSheet .formSheet .popover .automatic
+    /// iOS13 全出: .fullScreen .currentContext .custom .overFullScreen .overCurrentContext
+    ///
+    /// iOS13以下:
+    /// - Parameter sender: 触发器
     @IBAction func presentDetailViewController(_ sender: Any) {
         let detailVC = DetailViewController()
         let navigationVC = UINavigationController(rootViewController: detailVC)
-        navigationVC.modalPresentationStyle = .popover
+        navigationVC.modalPresentationStyle = .pageSheet
         self.present(navigationVC, animated: true, completion: nil)
     }
     
