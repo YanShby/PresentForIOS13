@@ -13,9 +13,12 @@
 		687C9E0722C31B3000AE6608 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 687C9E0522C31B3000AE6608 /* Main.storyboard */; };
 		687C9E0922C31B3600AE6608 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 687C9E0822C31B3600AE6608 /* Assets.xcassets */; };
 		687C9E0C22C31B3600AE6608 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 687C9E0A22C31B3600AE6608 /* LaunchScreen.storyboard */; };
+		687C9E1422C31B5D00AE6608 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687C9E1322C31B5D00AE6608 /* DetailViewController.swift */; };
+		BACC8AF9ACDABA05FD06C632 /* Pods_PresentForIOS13.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D154AD89DB9197798DEFDF32 /* Pods_PresentForIOS13.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		40EFCFB8B194AEEF3877F646 /* Pods-PresentForIOS13.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PresentForIOS13.debug.xcconfig"; path = "Target Support Files/Pods-PresentForIOS13/Pods-PresentForIOS13.debug.xcconfig"; sourceTree = "<group>"; };
 		687C9DFC22C31B3000AE6608 /* PresentForIOS13.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PresentForIOS13.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		687C9DFF22C31B3000AE6608 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		687C9E0122C31B3000AE6608 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		687C9E0822C31B3600AE6608 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		687C9E0B22C31B3600AE6608 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		687C9E0D22C31B3600AE6608 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		687C9E1322C31B5D00AE6608 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		D154AD89DB9197798DEFDF32 /* Pods_PresentForIOS13.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PresentForIOS13.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED62B5E745E8330B78E5C5EE /* Pods-PresentForIOS13.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PresentForIOS13.release.xcconfig"; path = "Target Support Files/Pods-PresentForIOS13/Pods-PresentForIOS13.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BACC8AF9ACDABA05FD06C632 /* Pods_PresentForIOS13.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18FB9768B3C029BB579A3A26 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D154AD89DB9197798DEFDF32 /* Pods_PresentForIOS13.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		687C9DF322C31B3000AE6608 = {
 			isa = PBXGroup;
 			children = (
 				687C9DFE22C31B3000AE6608 /* PresentForIOS13 */,
 				687C9DFD22C31B3000AE6608 /* Products */,
+				E46B5BD6537CA85B88334F20 /* Pods */,
+				18FB9768B3C029BB579A3A26 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +76,23 @@
 				687C9DFF22C31B3000AE6608 /* AppDelegate.swift */,
 				687C9E0122C31B3000AE6608 /* SceneDelegate.swift */,
 				687C9E0322C31B3000AE6608 /* ViewController.swift */,
+				687C9E1322C31B5D00AE6608 /* DetailViewController.swift */,
 				687C9E0522C31B3000AE6608 /* Main.storyboard */,
 				687C9E0822C31B3600AE6608 /* Assets.xcassets */,
 				687C9E0A22C31B3600AE6608 /* LaunchScreen.storyboard */,
 				687C9E0D22C31B3600AE6608 /* Info.plist */,
 			);
 			path = PresentForIOS13;
+			sourceTree = "<group>";
+		};
+		E46B5BD6537CA85B88334F20 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				40EFCFB8B194AEEF3877F646 /* Pods-PresentForIOS13.debug.xcconfig */,
+				ED62B5E745E8330B78E5C5EE /* Pods-PresentForIOS13.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 687C9E1022C31B3600AE6608 /* Build configuration list for PBXNativeTarget "PresentForIOS13" */;
 			buildPhases = (
+				4BE52ADEE744C538DAA4CBB8 /* [CP] Check Pods Manifest.lock */,
 				687C9DF822C31B3000AE6608 /* Sources */,
 				687C9DF922C31B3000AE6608 /* Frameworks */,
 				687C9DFA22C31B3000AE6608 /* Resources */,
+				AE41B9121DE203859B0DA43B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +163,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4BE52ADEE744C538DAA4CBB8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PresentForIOS13-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE41B9121DE203859B0DA43B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PresentForIOS13/Pods-PresentForIOS13-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PresentForIOS13/Pods-PresentForIOS13-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PresentForIOS13/Pods-PresentForIOS13-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		687C9DF822C31B3000AE6608 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -141,6 +213,7 @@
 				687C9E0422C31B3000AE6608 /* ViewController.swift in Sources */,
 				687C9E0022C31B3000AE6608 /* AppDelegate.swift in Sources */,
 				687C9E0222C31B3000AE6608 /* SceneDelegate.swift in Sources */,
+				687C9E1422C31B5D00AE6608 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +355,7 @@
 		};
 		687C9E1122C31B3600AE6608 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40EFCFB8B194AEEF3877F646 /* Pods-PresentForIOS13.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +374,7 @@
 		};
 		687C9E1222C31B3600AE6608 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED62B5E745E8330B78E5C5EE /* Pods-PresentForIOS13.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

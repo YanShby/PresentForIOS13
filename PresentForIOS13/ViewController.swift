@@ -12,9 +12,16 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        self.navigationController?.navigationBar.prefersLargeTitles = true;
+        self.title = "A view controller"
     }
 
-
+    @IBAction func presentDetailViewController(_ sender: Any) {
+        let detailVC = DetailViewController()
+        let navigationVC = UINavigationController(rootViewController: detailVC)
+        navigationVC.modalPresentationStyle = .popover
+        self.present(navigationVC, animated: true, completion: nil)
+    }
+    
 }
 
